@@ -33,10 +33,13 @@ export default function Header({ setLanguage, setCurrency }) {
     <header className="bg-white text-black p-4 sticky top-0 z-50 ">
       <div className="flex justify-between items-center">
         {/* Logo */}
+
+        <Link to="/" className="text-lg hover:text-green-700 hover:scale-110">
         <div className="flex items-center space-x-2">
           <div className="bg-green-600 text-white px-2 py-1 rounded-full font-bold">Work</div>
           <span className="text-green-600 font-bold">zone</span>
-        </div>
+        </div></Link>
+        
 
         {/* Hamburger button below 1200px */}
         <div className="xl:hidden fixed top-4 right-4 z-[999]">
